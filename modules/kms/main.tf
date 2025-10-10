@@ -13,7 +13,7 @@ resource "aws_kms_key" "kms_demo" {
   deletion_window_in_days = var.deletion_window_in_days
   rotation_period_in_days = var.rotation_period_in_days
 
-  policy = file(var.kms_policy_path)
+  policy = file(var.kms_policy_path)  # we will get path from the root 
 }
 
 resource "aws_kms_alias" "kms_name_alias" {
@@ -23,4 +23,5 @@ resource "aws_kms_alias" "kms_name_alias" {
 
 output "alias_name" {
   value = aws_kms_alias.kms_name_alias.name
+
 }
