@@ -2,7 +2,7 @@ variable "directory" {
     type = string 
 }
 
-variable "region" {
+variable "aws_region" {
   type = string
 }
 
@@ -39,5 +39,9 @@ variable "application_name" {
 }
 
 variable "environment" {
+    type = string
+}
+
+variable "compute_type" {
     type = string
 }
