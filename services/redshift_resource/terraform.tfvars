@@ -8,5 +8,5 @@ az = "us-east-1a"
 nodes= 2
 roles = ["arn:aws:iam::347539192046:role/aws-service-role/ipam.amazonaws.com/AWSServiceRoleForIPAM"]
 redshift_public_access =  true
-maintenance_window = "Sun:12:00-Sun:12:30"
+maintenance_window = "Sun:00:00-Sun:00:30"
 retention_period = 7
