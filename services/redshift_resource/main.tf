@@ -8,7 +8,7 @@ module redshift {
     sg            = var.sg
     az            = var.az
     nodes         =  var.nodes
-    #subnet_group = var.subnet_group
+    subnet_group = var.subnet_group
     roles = var.roles
     redshift_public_access = var.redshift_public_access
     maintenance_window = var.maintenance_window

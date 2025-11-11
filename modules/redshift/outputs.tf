@@ -10,3 +10,7 @@ output "cluster_port" {
     value =  aws_redshift_cluster.demo.port
 }
 
+output "endpoint" {
+    value = aws_redshift_cluster.demo.endpoint
+}
+

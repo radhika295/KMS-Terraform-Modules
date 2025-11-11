@@ -38,10 +38,10 @@ variable "nodes" {
     description = "The number of compute nodes in the cluster."
 }
 
-# variable "subnet_group" {
-#     type = string
-#     description = "The name of a cluster subnet group to be associated with this cluster"
-# }
+ variable "subnet_group" {
+     type = string
+     description = "The name of a cluster subnet group to be associated with this cluster"
+}
 
 variable "roles" {
     type = list
