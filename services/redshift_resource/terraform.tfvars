@@ -1,0 +1,12 @@
+cluster_name = "demo"
+database_name = "dev"
+user_name = "radhika"
+instance_type = "ra3.large"
+cluster_type = "multi-node"
+sg = ["sg-05ab62f03bc26b875"]
+az = "us-east-1a"
+nodes= 2
+roles = ["arn:aws:iam::347539192046:role/aws-service-role/ipam.amazonaws.com/AWSServiceRoleForIPAM"]
+redshift_public_access =  true
+maintenance_window = "Sat:19:00-Sat:19:30"
+retention_period = 7
